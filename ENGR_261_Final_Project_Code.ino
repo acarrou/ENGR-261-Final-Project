@@ -23,7 +23,6 @@ void setup() {
   lcd.begin(16, 2);  // set up the LCD's number of columns and rows:
 }
 
-
 void loop() {
   //Intro message for the LCD
   lcd.print("Welcome! Press");
@@ -33,7 +32,6 @@ void loop() {
   //Servo activation function below
   ServoActuate();
 }
-
 
 void ServoActuate(){
   lastButtonState    = currentButtonState;      // save the last state
@@ -47,7 +45,6 @@ void ServoActuate(){
       angle = 180;
     }
 
- 
     CandyServo.write(angle); //control servo motor arccoding to the angle
     
     //Write ending message on the LCD
